@@ -27,7 +27,7 @@ Node.js uses the CommonJS module specification, which defines a system for serve
 
 Node.js internally wraps each module’s code in a function that looks something like this:
 
-```
+```text
 (function(exports, require, module, __filename, __dirname) {
     // Your module code actually lives here
 });
