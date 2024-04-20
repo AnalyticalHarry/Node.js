@@ -5,3 +5,10 @@ Classic example of Local Module export & Scope in Node.js, which are similar to 
 2. Function Scope: Within functions like addUser and findUser, any variables declared inside these functions would be local to them. For example, if you had a temporary variable inside addUser, it wouldn't be accessible from outside this function.
 
 3. Encapsulation: By using exports to share only what is necessary (like functions addUser and findUser), you encapsulate the implementation details. This keeps the userArray private, protecting it from unauthorized access and modification, which is a direct application of scoping principles to manage visibility and maintain integrity.
+
+
+/project
+|-- app.js
+|-- /lib
+    |-- user.js
+    |-- db.js
