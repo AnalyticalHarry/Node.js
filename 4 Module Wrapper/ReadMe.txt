@@ -27,11 +27,11 @@ Node.js uses the CommonJS module specification, which defines a system for serve
 
 Node.js internally wraps each module’s code in a function that looks something like this:
 
-```text
+
 (function(exports, require, module, __filename, __dirname) {
     // Your module code actually lives here
 });
-```
+
 This wrapping function is automatically called by Node.js when the module is required, and it's passed several important local variables:
 
 exports and module.exports: These are objects that the module can use to export functions, objects, or primitives so that other modules can use them through require().
