@@ -89,9 +89,9 @@ Node.js is commonly used for:
 8. **Version Control**
    - Using Git for version control, branching, and collaboration.
 
-## Example Code
+### Example 
 
-### Local Modules & Exports
+#### Local Modules & Exports
 
 ```javascript
 // math.js
