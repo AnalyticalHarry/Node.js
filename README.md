@@ -54,37 +54,55 @@ Node.js is commonly used for:
 ## Topics to Learn for Working with Frameworks like React.js or React Native
 
 1. **Basic JavaScript Knowledge**
-   - Understanding of JavaScript fundamentals and ES6+ features.
-   - Familiarity with asynchronous programming (promises, async/await).
+   - Fundamentals of JavaScript (variables, data types, functions).
+   - ES6+ features (arrow functions, destructuring, spread/rest operators).
 
 2. **Node.js Core Concepts**
-   - **Local Modules & Exports**: Learn how to create and use local modules.
-   - **Scope**: Understand variable scoping and closures.
-   - **IIFE (Immediately Invoked Function Expressions)**: Know how to use IIFE for module encapsulation.
-   - **Module Wrapper**: Understand the module wrapper function in Node.js.
-   - **Module Caching**: Learn how Node.js caches modules to improve performance.
-   - **Import and Export Patterns**: Familiarize yourself with common patterns for importing and exporting modules.
-   - **ES Modules**: Understand ES6 module syntax and how it differs from CommonJS.
+   - **Local Modules & Exports**: Learn how to create and export modules, and import them in other files.
+   - **Scope**: Understanding variable scope and closures.
+   - **IIFE (Immediately Invoked Function Expressions)**: Encapsulate code and manage scope.
+   - **Module Wrapper**: How Node.js wraps modules for encapsulation.
+   - **Module Caching**: Learn how Node.js caches modules to optimize performance.
+   - **Import and Export Patterns**: Using different patterns for module import and export (CommonJS and ES Modules).
+   - **ES Modules**: Understand the ES6 module syntax and its usage in Node.js.
 
 3. **NPM (Node Package Manager)**
-   - Managing packages and dependencies.
-   - Understanding package.json and npm scripts.
+   - Managing project dependencies and scripts with npm.
+   - Understanding `package.json` and the npm registry.
 
 4. **RESTful API Development**
-   - Building and consuming RESTful APIs.
-   - Understanding HTTP methods and status codes.
+   - Building and interacting with RESTful APIs.
+   - Understanding HTTP methods, request/response formats, and status codes.
 
 5. **Asynchronous Programming**
-   - Handling asynchronous operations effectively.
-   - Error handling and debugging asynchronous code.
+   - Handling asynchronous operations using callbacks, promises, and async/await.
+   - Error handling in asynchronous code.
 
 6. **Framework-Specific Knowledge**
-   - **React.js**: Learn about components, props, state, lifecycle methods, hooks, and React Router.
-   - **React Native**: Understand mobile-specific components, navigation, and integrating with native modules.
+   - **React.js**: Components, props, state management, lifecycle methods, hooks, and routing.
+   - **React Native**: Mobile-specific components, navigation, and native module integration.
 
 7. **Build Tools and Testing**
-   - Using build tools like Webpack and Babel.
-   - Writing and running tests with tools like Jest or Mocha.
+   - Using build tools like Webpack, Babel, and npm scripts.
+   - Writing and running tests with testing frameworks like Jest or Mocha.
 
 8. **Version Control**
-   - Using Git for version control and collaboration.
+   - Using Git for version control, branching, and collaboration.
+
+## Example Code
+
+### Local Modules & Exports
+
+```javascript
+// math.js
+module.exports.add = function (a, b) {
+  return a + b;
+};
+
+// main.js
+const math = require('./math');
+console.log(math.add(2, 3)); // Output: 5
+```
+
+### Author : Hemant Thapa
+### Email : hemantthapa1998@gmail.com
